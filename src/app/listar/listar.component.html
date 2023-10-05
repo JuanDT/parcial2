@@ -1,0 +1,14 @@
+<ul class="list-group">
+  <li *ngFor="let cita of citas" class="list-group-item mb-3">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Cédula: {{ cita.cedula }}</h5>
+        <p class="card-text">Nombre: {{ cita.nombre }}</p>
+        <p class="card-text">Fecha: {{ cita.fecha }}</p>
+        <p class="card-text">Hora: {{ cita.hora }}</p>
+        <p class="card-text">Observaciones: {{ cita.observaciones }}</p>
+        <button (click)="editarCita(cita.cedula)" class="btn btn-primary">Editar</button>
+      </div>
+    </div>
+  </li>
+</ul>
