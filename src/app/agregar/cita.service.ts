@@ -4,12 +4,12 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class TarjetaService {
-  apiUrl = 'https://app.gosummus.com/testing/api/tarjeta';
+export class CitaService {
+  apiUrl = 'https://app.gosummus.com/testing/api/cita';
 
   constructor(private http: HttpClient) { }
 
-  crearTarjeta(tarjeta: any) {
-    return this.http.post(this.apiUrl, tarjeta);
+  crearTarjeta(cita: any) {
+    return this.http.post(this.apiUrl, cita);
   }
 }
